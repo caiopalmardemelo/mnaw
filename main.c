@@ -5,7 +5,7 @@ int main(){
     i = 0;
 
     while( i <= 10 ){
-    printf(" %d ", i );
+    printf("%d ", i );
     i++;
     }
 }
@@ -18,7 +18,7 @@ int main(){
     while (i < 20){
         i = i + 1;
         if( i%2 == 0 ){
-            printf(" %d ", i );
+            printf("%d ", i );
         }
     }
 }
@@ -29,10 +29,26 @@ int main(){
     i = 10;
 
     while( i >= 1 ){
-    printf(" %d ", i );
+    printf("%d ", i );
     i--;
     }
 }
 /*escreva um programa que solicite a idade do usuário e informe se ele é uma criança, adolescente, adulto ou idoso*/
-int main
-
+int main(){
+    int i;
+    printf("digite sua idade: ");
+    scanf("%d", &i );
+    while( i < 0 ){
+        printf("você tá no saco do seu pai");
+        scanf("%d", &i );
+    }
+    if( i < 14 ){
+        printf("você é uma criança desgraçada");
+    }else if( i < 18 ){
+        printf("já dá pra brincar de fazer neném");
+    }else if( i < 60 ){
+        printf("acorda, trabalha, come, dorme, trabalha, come, dorme, acorda...");
+    }else{
+        printf("tá com o pé na cova né véio filha da puta");
+    }
+}
