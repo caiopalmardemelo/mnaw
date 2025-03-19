@@ -124,11 +124,11 @@ int main(){
     int i = 1;
     while(i <= 100){
         if(i % 3 == 0 && i % 5 == 0){
-            printf("%d: fizzbuzz ", i);
+            printf("%d:fizzbuzz ", i);
         }else if(i % 5 == 0){
-            printf("%d buzz ", i);
+            printf("%d:buzz ", i);
         }else if(i % 3 == 0){
-            printf("%d: fizz ", i);
+            printf("%d:fizz ", i);
         }else{
             printf("%d ", i);
         }
@@ -136,3 +136,25 @@ int main(){
     }
 }
 /*crie um programa que peça a altura e o peso do usuário e calcule o índice de massa corporal (IMC)*/
+int main(){
+    int p;
+    int a;
+    int imc;
+    printf("digite seu peso e sua altura: ");
+    scanf("%d \n %d", &p, &a);
+    imc = p / (a * a);
+    if(imc<18,5){
+        printf("abaixo do normal");
+    }else if(imc<24,9){
+        printf("normal");
+    }else if(imc<29,9){
+        printf("sobrepeso");
+    }else if(imc<34,9){
+        printf("obesidade grau I");
+    }else if(imc<39,9){
+        printf("obesidade grau II");
+    }else{
+        printf("obesidade grau III");
+    }
+}
+/*faça um programa que solicite um número e imprima se é primo ou não*/
